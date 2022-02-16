@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
       maxW="1480px"
       h="25"
       mx="auto"
-      mt="4"
+      my="4"
       justify="center"
       align="center"
       px="6"
