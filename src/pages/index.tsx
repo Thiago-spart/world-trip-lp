@@ -1,4 +1,6 @@
+import { Flex } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import { BannerSection } from "../components/BannerSection";
 import { Header } from "../components/Header";
 import { HeadTitle } from "../components/HeadTitle";
 
@@ -6,8 +8,10 @@ const Home: NextPage = () => {
   return (
     <>
       <HeadTitle title="Home" />
-      <Header />
-      <div>main</div>
+      <Flex as="main" direction="column" w="100vw" maxW="1480">
+        <Header />
+        <BannerSection />
+      </Flex>
     </>
   );
 };
