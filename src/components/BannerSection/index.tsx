@@ -21,7 +21,6 @@ export const BannerSection: React.FC = () => {
       w="100vw"
       height="40vh"
       position="relative"
-      border="1px solid red"
       bgImage="/background.svg"
     >
       <Flex
@@ -53,7 +52,6 @@ export const BannerSection: React.FC = () => {
           <Flex
             w="50%"
             h="100%"
-            border="1px solid red"
             align="center"
             justify="center"
             position="relative"
