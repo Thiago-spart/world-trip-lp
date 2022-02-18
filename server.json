@@ -1,0 +1,10 @@
+{
+	"continents": [
+		{
+			"id": 1,
+			"countryName": "North America",
+			"countriesNumber": 23,
+			"continentDescription": "North America is the third largest continent in the world by land area. By population, it is the fourth largest. Sometimes considered to be a subcontinent of the Americas, North America is found entirely in the northern hemisphere and is bordered by the Arctic Ocean in the north, the Atlantic ocean in the east, the Pacific Ocean in the west, and South America to the south. North America is home to the longest land border in the world, which is shared between Canada the the United States."
+		}
+	]
+}
