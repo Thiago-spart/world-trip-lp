@@ -4,6 +4,7 @@ import { BannerSection } from "../components/BannerSection";
 import { Categories } from "../components/Categories";
 import { Header } from "../components/Header";
 import { HeadTitle } from "../components/HeadTitle";
+import { SliderSection } from "../components/SliderSection";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <Header />
         <BannerSection />
         <Categories />
+        <SliderSection />
       </Flex>
     </>
   );
