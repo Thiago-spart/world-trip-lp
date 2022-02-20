@@ -1,21 +1,41 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Tooltip } from "@chakra-ui/react";
+import { useRouter } from "next/router";
+import { NextLink } from "../NextLink";
 
 export const Header: React.FC = () => {
+  const { asPath, push } = useRouter();
+
+  const getBackToHome = () => {
+    push("/");
+  };
+
   return (
     <Flex
       as="header"
-      w="100%"
-      maxW="1480px"
-      h="25"
-      mx="auto"
-      my="4"
-      justify="center"
       align="center"
+      maxW="1480px"
+      w="100%"
+      h="25"
       px="6"
-      py="6"
+      py="10"
     >
-      <Image src="/logo.svg" h="12" objectFit="cover" />
+      {asPath !== "/" && (
+        <Tooltip hasArrow>
+          <Button
+            as="a"
+            bg="transparent"
+            left="5"
+            display="flex"
+            justifySelf="flex-start"
+            alignSelf="flex-start"
+            onClick={getBackToHome}
+          >
+            <Image src="/vector.svg" w="12px" objectFit="cover" />
+          </Button>
+        </Tooltip>
+      )}
+      <Image src="/logo.svg" h="12" objectFit="cover" mx="auto" />
     </Flex>
   );
 };
