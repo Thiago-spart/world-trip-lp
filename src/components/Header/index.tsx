@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
             left="5"
             display="flex"
             justifySelf="flex-start"
-            alignSelf="flex-start"
+            alignSelf="center"
             onClick={getBackToHome}
           >
             <Image src="/vector.svg" w="12px" objectFit="cover" />
