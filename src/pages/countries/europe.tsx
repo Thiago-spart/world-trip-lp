@@ -1,4 +1,12 @@
-import { Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  SimpleGrid,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { NextPage } from "next";
 import { Header } from "../../components/Header";
 import { HeadTitle } from "../../components/HeadTitle";
@@ -80,6 +88,65 @@ const Europe: NextPage = () => {
               <Text>Cities + 100 </Text>
             </Flex>
           </Flex>
+        </Flex>
+        <Flex
+          as="section"
+          w="100vw"
+          align="center"
+          justify="center"
+          direction="column"
+          height="fit-content"
+          px={["30", "35"]}
+          py="10"
+          gap={["10", "5"]}
+        >
+          <Heading as="h3" alignSelf="flex-start" fontWeight="500">
+            Cities +100
+          </Heading>
+          <SimpleGrid
+            w="100%"
+            height="fit-content"
+            minChildWidth="260px"
+            column={["1", "4"]}
+            gap={["10", "5"]}
+          >
+            <Flex w="256px" direction="column" align="center" justify="center">
+              <Box
+                borderRadius="4px 4px 0 0"
+                w="100%"
+                h="173px"
+                bg="blackAlpha.600"
+              />
+              <Flex
+                border="1px solid #FFBA08"
+                borderTop="none"
+                borderRadius="0 0 4px 4px"
+                align="center"
+                w="100%"
+                justify="space-between"
+                px="24px"
+                py="25px"
+              >
+                <Flex
+                  direction="column"
+                  align="flex-start"
+                  justify="space-between"
+                >
+                  <Heading fontSize="20px">London</Heading>
+                  <Text fontSize="16px" color="#999999" whiteSpace="nowrap">
+                    United kingdom
+                  </Text>
+                </Flex>
+                <Box
+                  bg="blackAlpha.900"
+                  borderRadius="50%"
+                  w="30px"
+                  h="30px"
+                  display="block"
+                />
+              </Flex>
+            </Flex>
+          </SimpleGrid>
         </Flex>
       </Flex>
     </>
